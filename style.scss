@@ -302,3 +302,37 @@ input:focus {
   line-height: 1.7;
   color: hsl(270, 7%, 64%);
 }
+
+.fade-in-1 {
+  animation: fadeIn 2s;
+}
+.fade-in-2 {
+  animation: fadeIn 2s;
+}
+.fade-in-3 {
+  animation: fadeIn 4s;
+}
+.fade-in-4 {
+  animation: fadeIn 4s;
+}
+.fade-in-5 {
+  animation: fadeIn 4s;
+}
+.fade-in-6 {
+  animation: fadeIn 6s;
+}
+.fade-in-7 {
+  animation: fadeIn 6s;
+}
+.fade-in-8 {
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
