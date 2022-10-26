@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="fontaws.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <div class="violet">
+        <div class="phone">
+          <div class="phone-header">
+            <div class="header-sup"></div>
+            <div class="header-identity">
+              <i class="fas fa-angle-left"></i>
+              <img src="./images/avatar.jpg" alt="avatar" />
+              <div class="user">
+                <h2>Samuel Green</h2>
+                <p>Available to Walk</p>
+              </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <div class="phone-body">
+            <div class="message left">
+              <p class="post">That sounds great. I’d be happy with that.</p>
+            </div>
+            <div class="message left">
+              <p class="post">
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+            <div class="picture-message">
+              <img src="./images/dog-image-1.jpg" alt="" />
+              <img src="./images/dog-image-2.jpg" alt="" />
+              <img src="./images/dog-image-3.jpg" alt="" />
+            </div>
+            <div class="right">
+              <p class="post">Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="right">
+              <p class="post">Can you make it?</p>
+            </div>
+            <div class="message left">
+              <p class="post">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+            <div class="left-price">
+              <i class="far fa-circle"></i>
+              <p class="message">30 minute walk</p>
+              <p class="price">$29</p>
+            </div>
+            <div class="left-price">
+              <i class="far fa-circle"></i>
+              <p class="message">1 hour walk</p>
+              <p class="price">$49</p>
+            </div>
+            <div class="send">
+              <form onsubmit=" event.preventDefault(); validate();">
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Type a message..."
+                  value=""
+                />
 
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+                <button type="submit" class="iconic">
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gris">
+        <div class="description">
+          <h1 class="title">Simple booking</h1>
+          <p class="text">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

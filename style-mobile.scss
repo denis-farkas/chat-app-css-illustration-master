@@ -1,0 +1,104 @@
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1175px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .violet {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    margin-left: 0;
+  }
+
+  .gris {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .gris::before {
+    display: none;
+  }
+
+  .violet::before {
+    width: 50%;
+    height: 86%;
+    border-bottom-right-radius: 18rem;
+    border-bottom-left-radius: 0rem;
+    top: 0;
+    left: 0%;
+  }
+
+  .phone {
+    margin-top: 10vw;
+    margin-left: 0;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 10vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 19rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    height: 812px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  html {
+    font-size: 10.5px;
+  }
+}
